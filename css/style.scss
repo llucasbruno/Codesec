@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+@import 'sass/colors';
+@import 'sass/layout';
+@import 'sass/spacing';
+@import 'sass/typography';
+
+
+html{
+    scroll-behavior: smooth;
+    
+}
+
+body {
+    //background-color: $black-normal;
+    background-color: $black-normal;
+    font-family: 'Saira', sans-serif;
+    position: relative;
+
+}
+
+a {
+    text-decoration: none;
+    list-style: none;
+    text-decoration: none;
+}
+.border {
+    border: 2px solid red
+}
+
+@import 'sass/menu';
+@import 'sass/bgs';
+@import 'sass/icons';
+@import 'sass/buttons';
+@import 'sass/animations';
+@import 'sass/accordion';

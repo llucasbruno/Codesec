@@ -1,0 +1,15 @@
+@mixin secondary-button($background-color, $text-color) {
+    display: inline-block;
+    padding: 12px 60px ;
+    border: 1px solid $primary-normal;
+    border-radius: 7px;
+    background-color: $background-color;
+    color: $text-color;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.secondary-button {
+    @include secondary-button(none, #fff);
+}

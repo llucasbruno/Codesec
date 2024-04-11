@@ -1,0 +1,253 @@
+// Layout of project
+
+// Container-devices
+
+$container-xl: 1440px;
+$container-l: 1240px;
+$container-m: 960px;
+$container-s: 620px;
+$gutter: 20px;
+
+@mixin responsive($device) {
+    @if $device ==xl {
+
+        // For resolutions upper 1440px
+        @media screen and (min-width: $container-xl) {
+            @content;
+        }
+    }
+
+    @else if $device ==ul {
+
+        // For resolutions upper 960px
+        @media screen and (min-width: $container-m) {
+            @content;
+        }
+    }
+
+    @else if $device ==l {
+
+        // For resolutions between 1140px and 1440px
+        @media screen and (max-width: $container-xl) and (min-width: $container-l) {
+            @content;
+        }
+    }
+
+    @else if $device ==m {
+
+        // For resolutions between 960px and 1140px
+        @media screen and (max-width: $container-l) and (min-width: $container-s) {
+            @content;
+        }
+    }
+
+    @else if $device ==s {
+
+        // For resolutions less than 960px
+        @media screen and (max-width: $container-m) {
+            @content;
+        }
+    }
+
+    @else if $device ==xs {
+
+        // For resolutions less than 540px
+        @media screen and (max-width: $container-s) {
+            @content;
+        }
+    }
+}
+
+
+@function grid($col, $total: 12) {
+    @return calc($col / $total) * 100%;
+}
+
+
+@for $i from 1 through 12 {
+    .grid-#{$i} {
+        width: calc(#{grid($i)} - #{$gutter});
+        margin: calc($gutter / 2);
+
+        padding: 16px 0px;
+        float: left;
+
+        @include responsive(s) {
+            width: calc(100% - #{$gutter});
+            float: none;
+        }
+    }
+}
+
+
+@for $i from 1 through 12 {
+    .grid-nobreak-#{$i} {
+        width: calc(#{grid($i)} - #{$gutter});
+        margin: calc($gutter / 2);
+
+        padding: 16px 0px;
+        float: left;
+    }
+}
+
+
+
+
+.container {
+    max-width: $container-xl;
+    margin: 0 auto;
+
+    padding: 56px 24px;
+
+    //border: 1px solid green;
+
+    /*display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;*/
+    //overflow: hidden;
+    //position: sticky;
+
+    // clearfix
+    &::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+
+    @include responsive(s) {
+        flex-direction: column;
+
+        padding: 32px 16px;
+    }
+}
+
+
+
+
+.flex-start-row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+.flex-end-row {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+}
+
+.flex-start-column {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.flex-end-column {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-center-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.flex-space {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+
+    
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.align-items-start {
+    align-items: flex-start;
+}
+
+.align-items-end {
+    align-items: flex-end;
+}
+
+
+
+.relative {
+    position: relative;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-item-1 {
+    flex: 1 1 360px;
+}
+
+.flex-item-2 {
+    flex: 2 1 360px;
+}
+
+.flex-item-3 {
+    flex: 3 1 360px;
+}
+
+.flex-item-4 {
+    flex: 4 1 360px;
+}
+
+.flex-item-5 {
+    flex: 5 1 360px;
+}
+
+.flex-auto {
+    flex: 1 1 auto;
+}
+
+// Width's
+.w-auto {
+    width: auto;
+}
+
+.h-auto {
+    height: auto !important;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.w-75 {
+    width: 75%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-25 {
+    width: 25%;
+}
