@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Saira:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   padding: 0;
@@ -1399,6 +1400,7 @@ body {
   background-color: #080007;
   font-family: "Saira", sans-serif;
   position: relative;
+  overflow-x: hidden;
 }
 
 a {
@@ -1609,6 +1611,92 @@ nav .nav-item {
   pointer-events: all;
 }
 
+.bg {
+  position: relative;
+  width: auto;
+  height: auto;
+  z-index: -9999;
+}
+.bg svg {
+  width: auto;
+  height: auto; /* Permite que a altura se ajuste automaticamente à largura */
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.c1 {
+  transform: translate(-50%);
+  animation: c1 1s linear forwards 2s infinite; /* Duração da animação: 2 segundos (ajuste conforme necessário) */
+}
+
+.c1-move {
+  transform: translate(-50%);
+  animation: c1 1s linear forwards 2s infinite; /* Duração da animação: 2 segundos (ajuste conforme necessário) */
+}
+
+@keyframes c1 {
+  from {
+    transform: translate(-50%);
+  }
+  to {
+    transform: translate(130%);
+    opacity: 0;
+  }
+}
+.c2 {
+  animation: c2 0.9s linear forwards infinite; /* Duração da animação: 2 segundos (ajuste conforme necessário) */
+}
+
+/* Definição da animação com @keyframes */
+@keyframes c2 {
+  0% {
+    stroke-dasharray: 0 1000; /* Início com traço de 0 e espaço de 1000 */
+  }
+  20% {
+    stroke-dasharray: 200 1000; /* Após 20% do tempo, traço de 200 e espaço de 800 */
+  }
+  40% {
+    stroke-dasharray: 400 1000; /* Após 40% do tempo, traço de 400 e espaço de 600 */
+  }
+  60% {
+    stroke-dasharray: 700 800; /* Após 60% do tempo, traço de 600 e espaço de 400 */
+  }
+  80% {
+    stroke-dasharray: 900 1000; /* Após 80% do tempo, traço de 800 e espaço de 200 */
+  }
+  100% {
+    stroke-dasharray: 12000 1000; /* No final, traço de 1000 e espaço de 0 */
+    opacity: 0;
+  }
+}
+.c3 {
+  animation: c3 1.2s linear forwards infinite;
+}
+
+@keyframes c3 {
+  0% {
+    stroke-dasharray: 120 1000;
+  }
+  100% {
+    stroke-dasharray: 1000 1000;
+    opacity: 0;
+  }
+}
+.c4 {
+  transform: translate(50%);
+  animation: c4 1s linear forwards 2s infinite;
+}
+
+@keyframes c4 {
+  from {
+    transform: translate(50%);
+  }
+  to {
+    transform: translate(-130%);
+    opacity: 0;
+  }
+}
 .secondary-button {
   display: inline-block;
   padding: 12px 60px;
