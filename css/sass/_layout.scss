@@ -251,3 +251,46 @@ $gutter: 20px;
 .w-25 {
     width: 25%;
 }
+
+
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+  ;
+   
+}
+.master-profile {
+    img {
+        width: 37px;
+        height: 37px;
+        border: 1px solid rgba(255, 1, 108, 0.5);
+        transition: 1s ease;
+
+        &:hover {
+            border: 1px solid rgba(255, 1, 107, 0.951);
+            border-radius: 3px;
+        }
+    }
+
+    span {
+        color: $white-dark;
+        strong {
+            color: $gray-7;
+            font-weight: bold;
+            font-size: 18px;
+
+        }
+    }
+
+}
+
+
+.dns {
+   
+    display: inline-flex;
+    align-items: center;
+    color: $white-normal;
+    
+}

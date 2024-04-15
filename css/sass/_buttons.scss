@@ -1,15 +1,41 @@
-@mixin secondary-button($background-color, $text-color) {
-    display: inline-block;
-    padding: 12px 60px ;
+@mixin primary-button($background, $text-color) {
+    padding: 16px 45px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid $primary-normal;
-    border-radius: 7px;
-    background-color: $background-color;
+    border-radius: 3px;
+    /* Use 'background' em vez de 'background-color' */
+    background: $background;
     color: $text-color;
     cursor: pointer;
     font-size: 18px;
     font-weight: 400;
+
+    .logo-0 {
+        width: 25px;
+        height: 25px;
+        animation: rotate 4s linear infinite;
+
+    }
+
+    .arrow-r {
+        width: 20px;
+        height: 20px;
+        transition: 1s ease;
+    }
+
+    transition: 1s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+    &:hover {
+        opacity: .8;
+
+        .arrow-r {
+            transform: translateX(8px);
+        }
+    }
 }
 
-.secondary-button {
-    @include secondary-button(none, #fff);
+.primary-button {
+    @include primary-button(linear-gradient(90deg, rgba(18, 2, 9, 0.5998774509803921) 0%, rgba(159, 17, 77, 1) 100%), $white-light);
 }

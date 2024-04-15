@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
 
 
 
@@ -10,7 +10,7 @@
   @if $size ==h1 and $device ==desktop {
     font-size: 64px;
     line-height: 110%;
-    font-weight: 100;
+    font-weight: 300;
   }
 
   @else if $size ==h1 and $device ==mobile {
@@ -34,7 +34,7 @@
   }
 
   @else if $size ==h2 and $device ==mobile {
-    font-size: 38px;
+    font-size: 32px;
     line-height: 120%;
     font-weight: 100;
   }
@@ -84,13 +84,13 @@
   }
 
   @else if $size ==h5 and $device ==desktop {
-    font-size: 26px;
+    font-size: 20px;
     line-height: 140%;
     font-weight: 300;
   }
 
   @else if $size ==h5 and $device ==mobile {
-    font-size: 24px;
+    font-size: 18px;
     line-height: 140%;
     font-weight: 300;
   }
@@ -122,7 +122,7 @@
 
 
 @mixin typeface-2($size: p2, $device: desktop) {
-  font-family: 'Cairo', sans-serif;
+  font-family: 'Mukta', sans-serif;
 
   @if $size ==p1 and $device ==desktop {
     font-size: 28px;
@@ -155,21 +155,21 @@
   }
 
   @else if $size ==p3 and $device ==desktop {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 140%;
-    font-weight: 200;
+    font-weight: 400;
   }
 
   @else if $size ==p3 and $device ==mobile {
     font-size: 16px;
     line-height: 140%;
-    font-weight: 200;
+    font-weight: 400;
   }
 
   @else if $size ==p3 and $device ==smallmobile {
     font-size: 14px;
     line-height: 140%;
-    font-weight: 200;
+    font-weight: 300;
   }
 
   @else if $size ==p4 and $device ==desktop {
@@ -204,7 +204,12 @@ h1 {
 
   color: $primary-normal;
   z-index: 5;
+  background: linear-gradient(90deg, rgba(255,1,108,0.24) 0%, rgba(255,1,108,1) 42%, rgba(255,1,108,1) 100%);
+    -webkit-background-clip: text;
+  background-clip: text;
 
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 7px;
   @include typeface-1(h1, desktop);
 
   @include responsive(s) {
@@ -219,7 +224,7 @@ h1 {
 
 
 h2 {
-  color: $primary-normal;
+  color: $white-dark;
   @include typeface-1(h2, desktop);
 
   @include responsive(s) {
@@ -258,6 +263,7 @@ h4 {
 }
 
 h5 {
+  color: $white-dark;
   @include typeface-1(h5, desktop);
 
   @include responsive(s) {
@@ -324,6 +330,7 @@ p {
 }
 
 .p3 {
+  color: $gray-5;
   @include typeface-2(p3, desktop);
 
   @include responsive(s) {
@@ -407,8 +414,4 @@ b {
 
 .fw-2 {
   font-weight: 200;
-} 
-
-
-
-
+}
