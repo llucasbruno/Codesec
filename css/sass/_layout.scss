@@ -131,6 +131,7 @@ $gutter: 20px;
     align-items: center;
     flex-direction: row;
 
+    
 }
 
 .flex-end-row {
@@ -258,7 +259,10 @@ $gutter: 20px;
     display: flex;
     justify-content:space-between;
     align-items: center;
-  ;
+
+    @include responsive(s) {
+        padding: 144px 8px 32px 8px;
+    }
    
 }
 .master-profile {
@@ -286,11 +290,51 @@ $gutter: 20px;
 
 }
 
-
 .dns {
-   
     display: inline-flex;
     align-items: center;
+    color: $white-normal; 
+}
+
+//hero grid 2
+
+    .bcm {
+        position: absolute;
+        background: linear-gradient(90deg, rgba(255,1,108,0.24) 0%, rgba(255,1,108,1) 60%, rgba(255,1,108,1) 100%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        left: 48%;
+        top: -30%;
+        transform: translate(-50%, -50%);
+        font-size: 22px;
+        text-transform: capitalize;
+
+        @include responsive(s) {
+            font-size: 18px;
+        }
+       
+    }
+
+
+.text-change {
+    display: inline-block;
     color: $white-normal;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 15px;
+    font-size: 54px;
+
+    @include responsive(s) {
+        font-size: 38px;
+    }
     
+    @include responsive(xs) {
+        font-size: 24px;
+    }
+}
+
+.dud {
+    color: $primary-normal;
+    filter: drop-shadow(0 0 0.5em rgb(255, 0, 123));
+  
 }

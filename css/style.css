@@ -427,6 +427,11 @@
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (max-width: 960px) {
+  .hero {
+    padding: 144px 8px 32px 8px;
+  }
+}
 
 .master-profile img {
   width: 37px;
@@ -451,6 +456,48 @@
   display: inline-flex;
   align-items: center;
   color: rgb(244, 244, 244);
+}
+
+.bcm {
+  position: absolute;
+  background: linear-gradient(90deg, rgba(255, 1, 108, 0.24) 0%, rgb(255, 1, 108) 60%, rgb(255, 1, 108) 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  left: 48%;
+  top: -30%;
+  transform: translate(-50%, -50%);
+  font-size: 22px;
+  text-transform: capitalize;
+}
+@media screen and (max-width: 960px) {
+  .bcm {
+    font-size: 18px;
+  }
+}
+
+.text-change {
+  display: inline-block;
+  color: rgb(244, 244, 244);
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 15px;
+  font-size: 54px;
+}
+@media screen and (max-width: 960px) {
+  .text-change {
+    font-size: 38px;
+  }
+}
+@media screen and (max-width: 620px) {
+  .text-change {
+    font-size: 24px;
+  }
+}
+
+.dud {
+  color: #FF016C;
+  filter: drop-shadow(0 0 0.5em rgb(255, 0, 123));
 }
 
 .s-0 {
@@ -1095,9 +1142,10 @@
 }
 
 h1 {
+  display: inline-block;
   color: #FF016C;
   z-index: 5;
-  background: linear-gradient(90deg, rgba(255, 1, 108, 0.24) 0%, rgb(255, 1, 108) 42%, rgb(255, 1, 108) 100%);
+  background: linear-gradient(90deg, rgba(255, 1, 108, 0.24) 0%, rgb(255, 1, 108) 60%, rgb(255, 1, 108) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1110,17 +1158,17 @@ h1 {
 @media screen and (max-width: 960px) {
   h1 {
     font-family: "Saira", sans-serif;
-    font-size: 40px;
+    font-size: 48px;
     line-height: 110%;
-    font-weight: 100;
+    font-weight: 400;
   }
 }
 @media screen and (max-width: 620px) {
   h1 {
     font-family: "Saira", sans-serif;
-    font-size: 32px;
+    font-size: 38px;
     line-height: 120%;
-    font-weight: 100;
+    font-weight: 400;
   }
 }
 
@@ -1387,9 +1435,9 @@ span {
 @media screen and (max-width: 960px) {
   .letter-h1 {
     font-family: "Saira", sans-serif;
-    font-size: 40px;
+    font-size: 48px;
     line-height: 110%;
-    font-weight: 100;
+    font-weight: 400;
   }
 }
 
@@ -1503,6 +1551,7 @@ header {
   background: linear-gradient(90deg, rgba(18, 2, 9, 0) 0%, rgb(255, 1, 108) 100%);
   transition: 0.4s ease;
   transform: translate(-50%);
+  border-radius: 15px;
 }
 .bx::after {
   top: 30%;
@@ -1542,19 +1591,31 @@ header {
   width: 0%;
   height: 1px;
   transition: 1s ease;
-  background: linear-gradient(270deg, #2DC7ED 0%, rgba(83, 139, 240, 0) 100%);
+  background: linear-gradient(270deg, #a10848 0%, rgba(240, 83, 167, 0) 100%);
 }
 .nav-link:hover {
   margin-left: 16px;
 }
 .nav-link:hover::after {
   width: 100%;
+  background: linear-gradient(270deg, #a10848 0%, rgba(240, 83, 167, 0) 100%);
+}
+@media screen and (max-width: 960px) {
+  .nav-link {
+    font-size: 32px;
+    line-height: 120%;
+  }
 }
 
 .nav {
   max-width: 1440px;
   margin: 288px auto;
   padding: 96px 24px;
+}
+@media screen and (max-width: 960px) {
+  .nav .grid-list-menu {
+    margin-bottom: 50px;
+  }
 }
 @media screen and (max-width: 960px) {
   .nav {
@@ -1850,6 +1911,12 @@ nav {
   animation: c4 1s linear forwards;
 }
 
+@media screen and (max-width: 620px) {
+  .btn-area {
+    flex-wrap: wrap;
+  }
+}
+
 .primary-button {
   padding: 16px 45px;
   display: inline-flex;
@@ -1864,6 +1931,12 @@ nav {
   font-size: 18px;
   font-weight: 400;
   transition: 1s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+@media screen and (max-width: 620px) {
+  .primary-button {
+    margin-bottom: 24px;
+    padding: 14px 35px;
+  }
 }
 .primary-button .logo-0 {
   width: 25px;

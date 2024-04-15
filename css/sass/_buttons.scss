@@ -12,6 +12,11 @@
     font-size: 18px;
     font-weight: 400;
 
+    @include responsive(xs) {
+        margin-bottom: 24px;
+        padding: 14px 35px;
+    }
+
     .logo-0 {
         width: 25px;
         height: 25px;
@@ -33,6 +38,13 @@
         .arrow-r {
             transform: translateX(8px);
         }
+    }
+}
+
+.btn-area {
+    @include responsive(xs) {
+        flex-wrap: wrap;
+      
     }
 }
 

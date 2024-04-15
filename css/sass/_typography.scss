@@ -14,15 +14,15 @@
   }
 
   @else if $size ==h1 and $device ==mobile {
-    font-size: 40px;
+    font-size: 48px;
     line-height: 110%;
-    font-weight: 100;
+    font-weight: 400;
   }
 
   @else if $size ==h1 and $device ==smallmobile {
-    font-size: 32px;
+    font-size: 38px;
     line-height: 120%;
-    font-weight: 100;
+    font-weight: 400;
   }
 
   //h2
@@ -201,15 +201,16 @@
 
 
 h1 {
-
+  display: inline-block;
   color: $primary-normal;
   z-index: 5;
-  background: linear-gradient(90deg, rgba(255,1,108,0.24) 0%, rgba(255,1,108,1) 42%, rgba(255,1,108,1) 100%);
+  background: linear-gradient(90deg, rgba(255,1,108,0.24) 0%, rgba(255,1,108,1) 60%, rgba(255,1,108,1) 100%);
     -webkit-background-clip: text;
   background-clip: text;
 
   -webkit-text-fill-color: transparent;
   letter-spacing: 7px;
+
   @include typeface-1(h1, desktop);
 
   @include responsive(s) {

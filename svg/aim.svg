@@ -1,0 +1,6 @@
+<svg width="484" height="484" viewBox="0 0 484 484" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M453 1.5H481C482.105 1.5 483 2.39543 483 3.5V31" stroke="#FF016C" stroke-width="2" stroke-linecap="square"/>
+<path d="M31 1H3C1.89543 1 1 1.89543 1 3V30.5" stroke="#FF016C" stroke-width="2" stroke-linecap="square"/>
+<path d="M31 483H3C1.89543 483 1 482.105 1 481V453" stroke="#FF016C" stroke-width="2" stroke-linecap="square"/>
+<path d="M453 483H481C482.105 483 483 482.105 483 481V453" stroke="#FF016C" stroke-width="2" stroke-linecap="square"/>
+</svg>
