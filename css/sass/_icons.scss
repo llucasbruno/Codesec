@@ -1,0 +1,33 @@
+.iconsH {
+    align-content:stretch;
+    width: 100%;
+
+    @include responsive(xs) {
+        flex-direction: column;
+        transform: scale(0.9);
+        margin-right: 0px;
+    }
+
+    .icons {
+        color: $white-normal;
+        justify-content: space-between;
+        margin-right: 95px;
+        flex: 1;
+
+        @include responsive(xs) {
+            margin-right: 0px;
+            padding: 25px 0;
+        }
+    
+        
+
+        div {
+            padding: 10px 0;
+            text-transform: capitalize;
+        }
+    }
+}
+
+.icons:last-child {
+    margin-right: 0px;
+}

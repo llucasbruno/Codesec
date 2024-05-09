@@ -9,7 +9,7 @@ $black-normal: #080007;
 $black-light: #160212;
 
 $white-light: #d9d8d9;
-$white-normal: rgb(244, 244, 244);
+$white-normal: #DBD6EB;
 $white-dark: #f2cada;
 
 $gray-1: #403e3f;
@@ -35,10 +35,13 @@ $yellow-dark: #d9b043;
 $yellow-light: #ffd76b;
 
 
-.color-white{
-    color: $white-normal;
+.color-whiteL{
+    color: $white-light;
 }
 
+.gray-5 {
+    color: $gray-5;
+}
 .color-black{
     color: $black-normal;
 }

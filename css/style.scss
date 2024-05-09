@@ -29,7 +29,13 @@ body {
 
 }
 
-
+mark {
+    display: inline-block;
+    background: rgba(255,1,108,1);
+    background: linear-gradient(90deg, rgba(255,1,108,1) 0%, #ea4c8e 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 .border {
     border: 2px solid red
@@ -37,6 +43,10 @@ body {
 
 .border2 {
     border: 2px solid rgb(0, 128, 255)
+}
+
+.border-none {
+    border: none
 }
 
 

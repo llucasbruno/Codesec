@@ -13,7 +13,7 @@ function scrollHeader() {
 window.addEventListener("scroll", scrollHeader);
 
 
-
+//scrollHeader ends
 
 
 
@@ -30,7 +30,7 @@ setInterval(() => toggleClass('.c2', 'c2-move'), 4000);
 setInterval(() => toggleClass('.c3', 'c3-move'), 5000);
 setInterval(() => toggleClass('.c4', 'c4-move'), 5000);
 
-
+//toggleClass ends
 
 
 
@@ -118,9 +118,9 @@ const next = () => {
     counter = (counter + 1) % phrases.length
 }
 
-
 next()
 
+//TextScramble ends
 
 
 
