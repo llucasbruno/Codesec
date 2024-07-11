@@ -131,7 +131,7 @@ $gutter: 20px;
     align-items: center;
     flex-direction: row;
 
-    
+
 }
 
 .flex-end-row {
@@ -175,7 +175,7 @@ $gutter: 20px;
     align-items: center;
     flex-direction: row;
 
-    
+
 }
 
 .flex-column {
@@ -257,14 +257,15 @@ $gutter: 20px;
 .hero {
     height: 100vh;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
 
     @include responsive(s) {
         padding: 144px 8px 32px 8px;
     }
-   
+
 }
+
 .master-profile {
     img {
         width: 37px;
@@ -280,6 +281,7 @@ $gutter: 20px;
 
     span {
         color: $white-dark;
+
         strong {
             color: $gray-7;
             font-weight: bold;
@@ -293,27 +295,27 @@ $gutter: 20px;
 .dns {
     display: inline-flex;
     align-items: center;
-    color: $white-normal; 
+    color: $white-normal;
 }
 
 //hero grid 2
 
-    .bcm {
-        position: absolute;
-        background: linear-gradient(90deg, rgba(255,1,108,0.24) 0%, rgba(255,1,108,1) 60%, rgba(255,1,108,1) 100%);
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        left: 48%;
-        top: -30%;
-        transform: translate(-50%, -50%);
-        font-size: 22px;
-        text-transform: capitalize;
+.bcm {
+    position: absolute;
+    background: linear-gradient(90deg, rgba(255, 1, 108, 0.24) 0%, rgba(255, 1, 108, 1) 60%, rgba(255, 1, 108, 1) 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    left: 48%;
+    top: -30%;
+    transform: translate(-50%, -50%);
+    font-size: 22px;
+    text-transform: capitalize;
 
-        @include responsive(s) {
-            font-size: 18px;
-        }
-       
+    @include responsive(s) {
+        font-size: 18px;
     }
+
+}
 
 
 .text-change {
@@ -327,7 +329,7 @@ $gutter: 20px;
     @include responsive(s) {
         font-size: 38px;
     }
-    
+
     @include responsive(xs) {
         font-size: 24px;
     }
@@ -336,7 +338,7 @@ $gutter: 20px;
 .dud {
     color: $primary-normal;
     filter: drop-shadow(0 0 0.5em rgb(255, 0, 123));
-  
+
 }
 
 //////////////////////////////////////////////////////
@@ -347,6 +349,7 @@ $gutter: 20px;
         text-transform: capitalize;
         font-weight: 400;
     }
+
     p {
         color: $white-dark;
         font-size: 20px;
@@ -354,42 +357,44 @@ $gutter: 20px;
 
         @include responsive(s) {
             font-size: 16px;
-       }
+        }
+
         @include responsive(xs) {
             font-size: 14px;
-       }
+        }
     }
- 
 
-    > div {
+
+    >div {
         &:first-of-type {
             width: 100%;
             height: 2px;
-            background: linear-gradient(90deg, #ff016b0a 0%, #ff016bb3 100%);        
+            background: linear-gradient(90deg, #ff016b0a 0%, #ff016bb3 100%);
         }
     }
 }
 
 .tech-icons {
-   @include responsive(s) {
+    @include responsive(s) {
         flex-direction: column;
-   }
-  
-   > div {
-        margin: 0px 25px 0px 0px;  
+    }
+
+    >div {
+        margin: 0px 25px 0px 0px;
 
         @include responsive(s) {
             margin-top: 54px;
-       }
+        }
     }
 
-    div { 
+    div {
         .tech-icon {
             display: block;
             text-align: center;
             width: 100%;
         }
-        & > div {
+
+        &>div {
             color: $white-normal;
             font-size: 20px;
         }
@@ -400,48 +405,53 @@ $gutter: 20px;
 
             @include responsive(xs) {
                 font-size: 14px;
-           }
-            
+            }
+
         }
     }
 }
 
 
 .logoA {
-    stroke-dasharray: 251; /* Comprimento total do círculo (2 * PI * raio) */
-    stroke-dashoffset: 251; /* Começa totalmente desenhado */
-    animation: draw 7s linear  forwards; /* Animação de 2 segundos */
+    stroke-dasharray: 251;
+    /* Comprimento total do círculo (2 * PI * raio) */
+    stroke-dashoffset: 251;
+    /* Começa totalmente desenhado */
+    animation: draw 7s linear forwards;
+    /* Animação de 2 segundos */
     transition: .4s ease;
 
     @include responsive(s) {
-       width: 190px;
-   }
+        width: 190px;
+    }
 
     @include responsive(xs) {
-       width: 140px;
-   }
-    
+        width: 140px;
+    }
+
 }
 
 
 
-.g1, .g3, .g4 {
-    
+.g1,
+.g3,
+.g4 {
+
     height: 280px;
     padding: 50px;
     border: 1px solid $primary-normal;
     border-radius: 20px;
-   
-    > div {
+
+    >div {
         color: #DBD6EB;
         font-weight: 300;
         font-size: 40px;
-        
+
     }
-    
+
     &:hover {
-        background: rgb(255,1,108);
-        background: linear-gradient(25deg, rgba(255,1,108,0) 0%, rgba(255, 1, 107, 0.209) 100%);
+        background: rgb(255, 1, 108);
+        background: linear-gradient(25deg, rgba(255, 1, 108, 0) 0%, rgba(255, 1, 107, 0.209) 100%);
 
     }
 }
@@ -451,7 +461,8 @@ $gutter: 20px;
     height: 280px;
     border: 1px solid $primary-normal;
     border-radius: 20px;
-    > div {
+
+    >div {
         color: #DBD6EB;
         font-weight: 300;
         font-size: 40px;
@@ -460,4 +471,144 @@ $gutter: 20px;
 
 
 
+
+
+
+.checkpoint {
+    position: relative;
+    display: flex;
+    padding: 40px 0;
+    position: relative;
+   
+   
+    @include responsive(s) {
+        border-bottom: 2px solid #ff016b23;
+        
+        flex-direction: column-reverse;
+    }
+
+    &::after {
+        content: '';
+        bottom: 0;
+        left: 50%;
+        position: absolute;
+        height: 100%;
+        width: 1px;
+        background: linear-gradient(180deg, rgba(232, 55, 82, 0.00) 1.9%, $primary-normal 54.69%, rgba(232, 55, 82, 0.00) 100%);
+        transform: translateX(-50%);
+        @include responsive(s) {
+            display: none;
+        }
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%);
+        border-radius: 50%;
+        width: 1.3rem;
+        height: 1.3rem; 
+        background: linear-gradient(270deg, #9F114D -0.06%, #DF4586 122.7%);
+        @include responsive(s) {
+            display: none;
+        }
+    }
+   
+}
+
+.checkpoint:first-child::before {
+    background: linear-gradient(180deg, #FF016C -1.09%, rgba(18, 2, 9, 0.00) 97.83%);
+    width: 1.6rem;
+    height: 1.6rem;     
+}
+
+
+.reverse {
+    flex-direction: row-reverse;
+
+    @include responsive(s) {
+        justify-content: row;
+        flex-direction: column-reverse;
+    }
+}
+
+.practice-classes {
+    display: flex;
+    justify-content: flex-end;
+
+    @include responsive(s) {
+        justify-content: flex-start;
+    }
+}
+.lf{
+    display: flex;
+    justify-content: flex-start;
+
+
+   
+}
+
+.info-classes {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 50px;
+    
+
+    .class-duration {
+        font-size: 48px;
+        color: $white-dark;
+      
+    }
+
+    .practice {
+        font-size: .5rem;
+        letter-spacing: 2.1px; 
+        text-transform: uppercase;
+    }
+}
+
+
+.module-content {
+    border: 1px solid $primary-normal;
+    border-radius: 4px;
+    padding: 50px;
+    min-height: 344px; 
+    
+    
+   
+    h4 {
+        font-weight: 500;
+        font-size: 26px; 
+        color: $white-dark;
+        text-transform: capitalize;
+    }
+
+    .module {
+        border-radius: 2px;
+        padding: 2px 24px;
+        text-transform: uppercase;
+        background: linear-gradient(270deg, #FF016C -0.01%, rgba(18, 2, 9, 0.00) 92.99%);
+        letter-spacing: 2.4px; 
+    }
+
+    
+}
+
+
+.info-tittle {
+    display: flex;
+    align-items: flex-start; 
+    justify-content: flex-start;
+    flex-direction: column; 
+
+    h2 {
+        span {
+            color: $primary-normal;    
+        }
+    }
+  
+}
 

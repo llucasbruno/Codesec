@@ -51,3 +51,9 @@
 .primary-button {
     @include primary-button(linear-gradient(90deg, rgba(18, 2, 9, 0.5998774509803921) 0%, rgba(159, 17, 77, 1) 100%), $white-light);
 }
+
+
+.secondary {
+    display: flex;
+    justify-content: center;
+}
