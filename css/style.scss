@@ -39,7 +39,9 @@ mark {
 .border {
     border: 2px solid red
 }
-
+.hidden {
+    overflow: hidden;
+}
 .border2 {
     border: 2px solid rgb(0, 128, 255)
 }
